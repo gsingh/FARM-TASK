@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --status-active-bg: #4CAF50;
+  --status-due-bg: #FF9800;
+  --status-overdue-bg: #F44336;
+  --status-scheduled-bg: #9CA3AF;
+}
+
+@theme {
+  --color-farm-green: #2D6A2E;
+  --color-farm-green-light: #4A8B4B;
+  --color-farm-green-dark: #1E4F1F;
+  --color-farm-cream: #FDFBF7;
+  --color-farm-brown: #8B6914;
+  --color-farm-sky: #E8F4F8;
+
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+  --color-primary: #2D6A2E;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5f5f5;
+  --color-secondary-foreground: #1a1a1a;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+  --color-accent: #f5f5f5;
+  --color-accent-foreground: #1a1a1a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #2D6A2E;
+  --radius: 0.5rem;
+}
+
+.high-contrast {
+  --color-farm-green: #1A5C1A;
+  --color-farm-green-light: #2D7A2D;
+  --color-farm-green-dark: #0F3D0F;
+  --color-farm-cream: #FFF8E7;
+  --color-farm-sky: #D8EAF2;
+
+  --color-background: #FFF8E7;
+  --color-foreground: #000000;
+  --color-card: #FFF8E7;
+  --color-card-foreground: #000000;
+  --color-popover: #FFF8E7;
+  --color-popover-foreground: #000000;
+  --color-primary: #1A5C1A;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e8e0d0;
+  --color-secondary-foreground: #000000;
+  --color-muted: #e8e0d0;
+  --color-muted-foreground: #333333;
+  --color-accent: #e8e0d0;
+  --color-accent-foreground: #000000;
+  --color-destructive: #cc2222;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #666666;
+  --color-input: #666666;
+  --color-ring: #000000;
+  --color-farm-brown: #6B4F00;
+  --status-active-bg: #1A5C1A;
+  --status-due-bg: #B05A00;
+  --status-overdue-bg: #cc2222;
+  --status-scheduled-bg: #666666;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--color-ring, #2D6A2E);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--color-ring);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}

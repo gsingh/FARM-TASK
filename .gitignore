@@ -43,5 +43,11 @@ htmlcov/
 .pytest_cache/
 coverage/
 
+# BMad framework & agent artifacts
+_bmad/
+_bmad-output/
+.agents/
+.claude/
+
 # Project specific
 backend/alembic/versions/
